@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sylvan Springs Area News</title>
+  <style>
+    :root {
+      --main-bg: #f5f5f5;
+      --primary-color: #2e7d32;   /* forest green */
+      --accent-color: #795548;    /* earthy brown */
+      --text-color: #212121;
+      --nav-bg: #ffffff;
+      --nav-text: #2e7d32;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: #333;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            margin: 20px 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .timeline-item.left {
+            justify-content: flex-start;
+        }
+        .timeline-item.right {
+            justify-content: flex-end;
+        }
+        .timeline-content {
+            width: 45%;
+            padding: 20px;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+      .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+        }
+
+      .left .timeline-content::before {
+            right: -20px;
+            border-left-color: #fff;
+        }
+        .right .timeline-content::before {
+            left: -20px;
+            border-right-color: #fff;
+        }
+        .timeline-dot {
+            width: 16px;
+            height: 16px;
+            background: #333;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .timeline-content h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .timeline-content p {
+            margin: 0;
+            color: #666;
+        }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    header {
+      background: url('alabama-1618300_640.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    nav a {
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+      color: var(--nav-text);
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-left: 5px solid var(--accent-color);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: var(--accent-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Accessibility: Skip link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.3rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Sylvan Springs Area News</h1>
+    <p>Citizen free press, promoting the open sharing of news, info, data, and history.</p>
+  </header>
+
+  <nav>
+    <!-- <a href="local.html">Local</a>
+    <a href="events.html">Events</a>
+    <a href="features.html">Features</a>
+    <a href="archives.html">History</a> -->
+    <a href="index.html">Back to Home</a>
+    <a href="contact.html">About the Author</a>
+  </nav>
+
+  <main id="main">
+    <section class="card">
+      <h1>Sylvan Springs Timeline</h1>
+      <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>August 9, 1814</h3>
+                <p>The Treaty of August 9, 1814, between the US and Creek Nation, with General Andrew Jackson, obtained a large part of present-day Alabama, inclusive of what would become Sylvan Springs. (Source: <a href="http://files.usgwarchives.net/al/jefferson/history/other/jefferso371gms.txt">USGWArchives</a>)<br/>
+                <img src="cession75.png" height="400"></p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>December 13, 1819</h3>
+                <p>Jefferson County was established. Named in honor of Thomas Jefferson. (Source: <a href="https://en.wikipedia.org/wiki/Jefferson_County,_Alabama">Wikipedia</a>)<br/>
+                <a href="http://cartweb.geography.ua.edu/lizardtech/iserv/calcrgn?cat=North%20America%20and%20United%20States&item=States/Alabama/Counties/jefferson//Jefferson1889a.sid&wid=1000&hei=900&props=item(Name,Description),cat(Name,Description)&style=simple/view-dhtml.xsl"><img src="jefcooldestmap.png" height="200"></a></p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Before 1957</h3>
+                <p>Town of Hoagtown organized.<br/>
+                Named after William T. Hogan, stepson of early settler Dudley Goolsby. The town was later renamed to Sylvan Springs, for a nearby fresh source of water.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>May 22, 1957</h3>
+                <p>Town of Sylvan Springs Incorporated.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>May 1957 - Sep 1960</h3>
+                <p>Mayor: Ollis Hatcher</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>July 13, 1957</h3>
+                <p>First Council Meeting<br/>
+                Location: Harmon's Service Station (Temporary Town Hall)<br/>
+              Aldermen:
+            <ul>
+              <li>Alderman 1: Oscar Hogan</li>
+              <li>Alderman 2: James A. Jones</li>
+              <li>Alderman 3: John Honeycutt</li>
+              <li>Alderman 4: Aubry Early</li>
+              <li>Alderman 5: William T. Parkin</li>
+              <li>Mayor: Ollis Hatcher</li>
+            </ul></p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Aug 1957</h3>
+                <p>Police Department established</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Sep 1957</h3>
+                <p>License fees and Building Inspections established</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>1957</h3>
+                <p>First fire truck purchased</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>1961</h3>
+                <p>Property purchased for what is now the "Old Town Hall"</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 1960 - Sep 1964</h3>
+                <p>Mayor: John Honeycutt</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jan 1962</h3>
+                <p>Construction began on the first town hall</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>May 1964</h3>
+                <p>Police Department dissolved</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 1964 - Sep 1968</h3>
+                <p>Mayor: Paul Patterson</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 1968 - Feb 1972</h3>
+                <p>Mayor: W.H. "Bill" Thomas</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Mar 1972 - Apr 1972</h3>
+                <p>Mayor: Louise Thomas</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>May 1972 - Sep 1984</h3>
+                <p>Mayor: James Hatcher</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Feb 1975</h3>
+                <p>Community Center purchased from Jeff Co Board of Education</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Apr 1977</h3>
+                <p>18.76 acres purchased for walking track</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jan 1986</h3>
+                <p>Annexation of West Grove doubling the size of the town</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 1984 - Sep 1988</h3>
+                <p>Mayor: David Hogan</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Feb 1988</h3>
+                <p>Shirley Honeycutt, Town Clerk, begins to open Town Hall for business three days per week</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 1988 - Sep 2004</h3>
+                <p>Mayor: Wallace Thompson</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Apr 1989</h3>
+                <p>Paramedic service established</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>1990</h3>
+                <p>Walking track opens</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jul 1990</h3>
+                <p>Town Hall remodeled</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Aug 1990</h3>
+                <p>Zoning Ordinance adopted</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 1990</h3>
+                <p>Fire Station (former) building purchased</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Apr 1998</h3>
+                <p>F-5 Tornado devastates town causing the death of Town Council Member Lenora McCullers along with citizens Joe & Betty Parker and Patricia Sullivan</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jun 2000</h3>
+                <p>5 acres adjoining Community Center and ball park purchased</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jun 2001</h3>
+                <p>Annexation of 3300 acres</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Mar 2003</h3>
+                <p>"Loggins House" purchased and used for Jeff Co Sheriff Substation</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jul 2003</h3>
+                <p>1 acre on corner of 269 and Rock Creek purchased</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jan 2004</h3>
+                <p>Office of Town Clerk becomes a full-time position held by Peggy Shadix</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 2004 - Present</h3>
+                <p>Mayor: Stevan Parsons</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Sep 2005</h3>
+                <p>2.75 acres adjoining ballpark purchased</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>2006</h3>
+                <p>Playground and pavilion construction</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jul 2007</h3>
+                <p>Town celebrates 50 years</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 2008</h3>
+                <p>Community Center renovation and Senior Fitness Center addition</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jan 2009</h3>
+                <p>Walter Lee Dump established</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Dec 2009</h3>
+                <p>Contract Post Office opens</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jun 2012</h3>
+                <p>Groundbreaking for new (current) Town Hall and Fire Station</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Nov 2013</h3>
+                <p>Restroom constructed at walking track</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Jan 2014</h3>
+                <p>Moved into new Town Hall</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>May 2014</h3>
+                <p>Dollar General opened</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Nov 2014</h3>
+                <p>Contract Post Office becomes Village Post Office and moved to Town Hall</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Dec 2015</h3>
+                <p>Second Pavilion constructed</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Oct 2016</h3>
+                <p>Town Website launched</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Sep 2017</h3>
+                <p>Town's VPO becomes an acceptance facility for Passport applications</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Dec 2019</h3>
+                <p>Storm Shelter constructed</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Aug 2020</h3>
+                <p>New air packs and life packs purchased for Fire Department</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Dec 2020</h3>
+                <p>Electronic sign installed in front of Community Center</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Dec 2020</h3>
+                <p>Toddler addition to playground</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Dec 2023</h3>
+                <p>New Fire Engine purchased</p>
+            </div>
+        </div>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sylvan Springs News. All rights reserved. 
+    <p>The content on this blog is provided for informational and commentary purposes only. All views expressed are those of the individual authors and do not necessarily reflect the opinions of the blog owner, contributors, or any affiliated entities. While we strive for accuracy, we make no guarantees regarding the completeness or reliability of any information presented. This is a citizen journalism platform — not a professional news organization — and content may include personal opinions, satire, or community-submitted stories. Nothing on this site should be taken as legal, professional, or factual advice. Any resemblance to real persons or events is often coincidental in the case of satire.</p>
+  </footer>
+</body>
+</html>

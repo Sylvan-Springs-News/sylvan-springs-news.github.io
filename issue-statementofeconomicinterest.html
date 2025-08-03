@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sylvan Springs Area News</title>
+  <style>
+    :root {
+      --main-bg: #f5f5f5;
+      --primary-color: #2e7d32;   /* forest green */
+      --accent-color: #795548;    /* earthy brown */
+      --text-color: #212121;
+      --nav-bg: #ffffff;
+      --nav-text: #2e7d32;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    header {
+      background: url('alabama-1618300_640.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    nav a {
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+      color: var(--nav-text);
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-left: 5px solid var(--accent-color);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: var(--accent-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Accessibility: Skip link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.3rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Sylvan Springs Area News</h1>
+    <p>Citizen free press, promoting the open sharing of news, info, data, and history.</p>
+  </header>
+
+  <nav>
+    <!-- <a href="local.html">Local</a>
+    <a href="events.html">Events</a>
+    <a href="features.html">Features</a>
+    <a href="archives.html">History</a> -->
+    <a href="index.html">Back to Home</a>
+    <a href="contact.html">About the Author</a>
+  </nav>
+
+  <main id="main">
+    <section class="card">
+      <h2>PUBLIC RECORD: Statement of Economic Interests</h2>
+      <h3>Data.</h3>
+      <h4>Sources: State of Alabama Ethics Commission</h3>
+      <h5>Original Story: August 3, 2025</h5>
+
+      <p>Offered without comment, or any thoughts. I don't see any problem here.
+        <ul>
+          <li><a href="https://seiform.alabama.gov/publicRecords/11ede989-3206-4462-92b2-c3a7ee086d1d" target="_blank">Statement of Economic Interests for Stevan Parsons</a></li>
+          <li><a href="https://seiform.alabama.gov/publicRecords/9a917411-d182-44f2-9d1f-c88ad31fa0c0" target="_blank">Statement of Economic Interests for Aaron Wheeler</a></li>
+        </ul>
+      </p>
+      <h2>Opinion Section:</h2>
+      <p>We reached out to a member of What's Happening in Sylvan Springs? (non-2.0 group) for a quote:<br/>
+        <em>"REEEEEE! IMMATURE! RAWR! CASHMEOUSIDEHOWBOWDAT?! ADMINPLS BAN THEM! HOWDAREYOUASKQUESTIONS!"</em><br/>
+        Not really, but screechin Karens gonna screech no matter what you do. You could wash Jesus's feet personally and they'd have a problem with it.... <br/><br/>We've decided that Aaron's team seems to be the most sensible, with a lot less of the hateful stuff going on. Unlike Stev's team, where we got a cold shoulder at town hall from council members obviously supporting Steve, we were welcomed by Aaron's  team, even though we ourselves were firmly on Stev's side at the time. <i>That's right, we started out supporting Stev as a team, but being neutral in coverage for the interviews, until they didn't seem to care for our vote enough to step up, communicate, and say "this is not right to treat neighbors poorly."</i> <br/>
+        <b>What kind of people do you want ruling the town for the next 4 years? People who are kind, or people who try and destroy or silence you? It could be you next.</b><br/>
+      </p>
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sylvan Springs News. All rights reserved. 
+    <p>The content on this blog is provided for informational and commentary purposes only. All views expressed are those of the individual authors and do not necessarily reflect the opinions of the blog owner, contributors, or any affiliated entities. While we strive for accuracy, we make no guarantees regarding the completeness or reliability of any information presented. This is a citizen journalism platform — not a professional news organization — and content may include personal opinions, satire, or community-submitted stories. Nothing on this site should be taken as legal, professional, or factual advice. Any resemblance to real persons or events is often coincidental in the case of satire.</p>
+  </footer>
+</body>
+</html>

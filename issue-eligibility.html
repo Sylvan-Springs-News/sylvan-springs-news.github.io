@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sylvan Springs Area News</title>
+  <style>
+    :root {
+      --main-bg: #f5f5f5;
+      --primary-color: #2e7d32;   /* forest green */
+      --accent-color: #795548;    /* earthy brown */
+      --text-color: #212121;
+      --nav-bg: #ffffff;
+      --nav-text: #2e7d32;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    header {
+      background: url('alabama-1618300_640.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    nav a {
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+      color: var(--nav-text);
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-left: 5px solid var(--accent-color);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: var(--accent-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Accessibility: Skip link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.3rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Sylvan Springs Area News</h1>
+    <p>Citizen free press, promoting the open sharing of news, info, data, and history.</p>
+  </header>
+
+  <nav>
+    <!-- <a href="local.html">Local</a>
+    <a href="events.html">Events</a>
+    <a href="features.html">Features</a>
+    <a href="archives.html">History</a> -->
+    <a href="index.html">Back to Home</a>
+    <a href="contact.html">About the Author</a>
+  </nav>
+
+  <main id="main">
+    <section class="card">
+      <h2>MYTH: If a mayor's health is not great, they would not qualify for re-election.</h2>
+      <h3>In Alabama, is there a requirement that a mayor be of sound body? Let's find out.</h3>
+      <h4>Sources: What's Happening in Sylvan Springs (Jennifer Parsons [mayor's wife/representing] post, which was deleted it seems, but reposted by another individual), State of Alabama Law</h3>
+      <h5>Original Story: August 2, 2025</h5>
+
+      <p>In the What's Happening in Sylvan Springs? Facebook group, the civil war wages on between supporters of the 20+ year incumbent mayor, Stev Parsons, and other citizens who are either undecided or supporters of Aaron Wheeler. In what we have seen, much of the anger seems to be around the very existence of the question, or the discussion around election, electability.</p>
+      <p>In one particular post, a concern was raised about the health status of our mayor, which is a valid question, and out of genuine concern as well. If Stev (or even Aaron) wins and then steps down/seat vacates for any reason, it would cause the Council President (Current: Rickey Jones) to be appointed as mayor, until a special election or for remainder of term.</p>
+      <p>It is notable, that while there are some rough responses from Mrs. Parsons attempting to represent Stev online, Aaron Wheeler and his wife seem to be showing respect to citizens who have concerns about him, not arguing. You can't blame Jimbo for Billybob's actions. The devil didn't make us do it - the Bible busted that myth already. This aligns with Mr. Wheeler's idea that we need to be a closer community, discussed in our interview with him. What he said and is doing so far, seems to verify.</p>
+
+      <p>The Original Post<br/>
+        <img src="ophealth.png">
+      </p>
+
+      <p>There was a post, which we couldn't find anymore, where the mayor's wife/representative Jennifer Parsons, had responded to someone else on this question. In that post, Mrs. Parsons indicated that if Stev Parsons' health was not good, he would not have qualified for re-election. For us, the most important thing, we are happy to hear Dr. Parsons is in good health. We grew up knowing this family and their contribution to our county and town.<br/>
+        <img src="stevhealthreport.png">
+      </p>
+
+      <h2>But... was that a misrepresentation of the requirements to be mayor?</h2>
+      <p>The answer is in the <a href="https://law.justia.com/codes/alabama/title-11/title-2/chapter-43a/article-2/section-11-43a-78/" target=_blank>2024 Code of Alabama, 11-43A-78.</a><br/>
+        Unfortunately, Jennifer Parsons statement is not accurate, and is a distortion of the facts. Such a rule would have been discriminatory on basis of age or health condition, and is in fact not a requirement in Alabama State Law.</p>
+        <h5>Section 11-43A-78 - Election of Municipal Officers; Qualifications and Eligibility of Candidates; Runoff Election; Term of Office.</h5>
+        <p><em>With respect to municipal elections, each candidate shall announce that he is to become a candidate for either mayor or for councilman of District 1, 2, 3, 4, 5, 6, or 7. A candidate may not run for both mayor and councilman in the same election. A candidate for mayor shall have resided in the municipality for a period of at least 90 days immediately preceding the date of regular election, and, if elected, shall continue to reside therein so long as he remains mayor. A candidate for councilman shall have resided within the district from which he seeks election for a period of at least 90 days immediately preceding the date of the regular election, and, if elected, shall continue to reside therein so long as he remains a councilman. Each voter in the election may cast one vote for a candidate for mayor and one vote for a candidate for councilman from the district in which the voter resides. Any candidate receiving a majority of the total votes cast for mayor or a majority of the total votes cast for councilman from any particular district shall be elected. In the event that no candidate receives a majority, then there shall be a runoff election for any such office to be held in a manner prescribed by the applicable general municipal election laws. The mayor and councilmen elected shall hold office for terms of four years each and shall serve until their respective successors have been elected and qualified. The mayor and councilmen may succeed themselves in office.</em></p>
+
+    <h2>Opinion: Measure, Ask, Discuss, as adults in a civil manner.</h2>
+    <p>It is unfortunate that a spouse acting as a representative in a campaign has chosen to misrepresent Alabama law in the election. There were some past discussions that we have had with Mrs. Parsons, which left us feeling a bit unsatisfied with the answers on First Amendment grounds on another issue as well.</p>
+
+    <p>We hope we are able to live with each other after this. We can't be doing the things, shown in the screen captures below, and you can't rightly blame the existence of an election - it's a part of life in the best country on Earth: USA. History and our creator will judge us, as will our children, based on how we handled ourselves here.</p>
+      <h3>From the same discussion thread, more mud slinging than a pottery house ran by animals</h3>
+      <p>More than a few citizens that we have talked to, has mentioned Dr. Parsons was in rough shape - with care in their voice, and the response from Jennifer Parsons seemed discussing efforts to <b>quiet the rumors</b>, labelling it as "political propaganda," which doesn't align to our recent interview discussing the important with open dialogue in elections, and transparency. She even followed up to tell a citizen "be careful."  <em>Rumors SHOULD be discussed, to allow voters to get an understanding of what is real or mythical. We don't support falsehoods either, but who gets to decide/arbitrate that in an election? The voters.</em><br/>
+        <img src="healthvenom1.png"><br/>
+
+        <img src="healthvenom2.png">
+      </p>
+      
+      <p><b>The question as to Dr. Parsons health is not a new question.</b><br/>Later in this exchange, another citizen said they were concerned. In this town, when someone says they're concerned for a person's health, they mean it. However, the response from others wasn't savory in the least. Almost like this person was speaking on behalf of the Parsons campaign. We aren't sure if that was the case, or if there's any official campaign connection.<br/>
+      <img src="jcs.png"><br/>
+      </p>
+      <h4>This is where we were taken back quite a bit. Whoa there.</h4>
+    <p>This message was direct from Mrs. Parsons to a citizen. <br/>
+      <b><em>So far, we haven't seen Aaron Wheeler nor his Wife engaging in this kind of thing. To us, this aligns with the idea of trying to unite people, rather than have civil war. That's a show of respect and character, even in the midst of social media power struggles.</em></b><br/>
+      <img src="jparsonsv.png"><br/>
+    
+    </p>
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sylvan Springs News. All rights reserved. 
+    <p>The content on this blog is provided for informational and commentary purposes only. All views expressed are those of the individual authors and do not necessarily reflect the opinions of the blog owner, contributors, or any affiliated entities. While we strive for accuracy, we make no guarantees regarding the completeness or reliability of any information presented. This is a citizen journalism platform — not a professional news organization — and content may include personal opinions, satire, or community-submitted stories. Nothing on this site should be taken as legal, professional, or factual advice. Any resemblance to real persons or events is often coincidental in the case of satire.</p>
+  </footer>
+</body>
+</html>
